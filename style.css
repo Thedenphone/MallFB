@@ -85,3 +85,22 @@ h1 {
 .location-status:first-line {
   font-size: 36px;
 }
+
+.terminal {
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.04),
+    rgba(0,0,0,0.04) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  pointer-events: none;
+}
