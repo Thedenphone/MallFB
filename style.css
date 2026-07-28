@@ -1,31 +1,47 @@
 body {
-  background-color: #F8F6F0;
+  background-color: #EDE3D0;
   font-family: "VT323", monospace;
-  color: #111111;
-  text-align: center;
+  color: #1B5555;
   margin: 0;
   padding: 0;
 }
 
-body::before {
-  content: "";
-  display: block;
+.terminal {
   width: 70%;
-  height: 8px;
-  background-color: #5FAEAE;
-  margin: 30px auto;
+  max-width: 700px;
+  margin: 80px auto;
+  background-color: #F8F6F0;
+  border: 8px solid #D5C8B0;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+.header {
+  font-size: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.line {
+  text-align: center;
+  margin: 20px 0;
 }
 
 h1 {
-  font-size: 52px;
-  letter-spacing: 10px;
-  font-weight: 400;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  font-size: 48px;
+  letter-spacing: 8px;
+  text-align: center;
+  font-weight: normal;
 }
 
-p {
-  font-size: 20px;
-  letter-spacing: 3px;
-  margin: 18px;
+.location {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.status {
+  margin-top: 40px;
+  font-size: 24px;
+  text-align: right;
 }
