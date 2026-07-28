@@ -58,3 +58,14 @@ h1 {
     opacity: 0;
   }
 }
+
+.location-status {
+  text-align: center;
+  margin: 35px 0;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.location-status:first-line {
+  font-size: 36px;
+}
