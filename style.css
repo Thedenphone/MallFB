@@ -105,7 +105,8 @@ h1 {
   pointer-events: none;
 }
 
-.location a {
+.location a,
+.location a:visited {
   color: #1B5555;
   text-decoration: none;
 }
