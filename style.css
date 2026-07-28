@@ -122,3 +122,32 @@ h1 {
 .location a:hover {
   color: #5FAEAE;
 }
+
+.status-led {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 8px;
+  height: 8px;
+
+  background: #00ff55;
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 5px #00ff55,
+    0 0 12px #00ff55,
+    0 0 20px rgba(0,255,85,0.8);
+
+  animation: pulseLED 2s infinite;
+}
+
+@keyframes pulseLED {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
