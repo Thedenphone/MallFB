@@ -104,3 +104,12 @@ h1 {
   );
   pointer-events: none;
 }
+
+.location a {
+  color: #1B5555;
+  text-decoration: none;
+}
+
+.location a:hover {
+  color: #5FAEAE;
+}
