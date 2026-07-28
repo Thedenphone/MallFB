@@ -11,9 +11,16 @@ body {
   max-width: 700px;
   margin: 80px auto;
   background-color: #F8F6F0;
-  border: 8px solid #D5C8B0;
+
+  border: 10px solid #D5C8B0;
+  border-radius: 18px;
+
   padding: 40px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.15);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.18),
+    inset 0 0 18px rgba(255,255,255,.35),
+    inset 0 0 10px rgba(0,0,0,.08);
 }
 
 .header {
