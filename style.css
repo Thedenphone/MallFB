@@ -194,3 +194,33 @@ h1 {
 .access-button:active {
   transform: translate(2px, 2px);
 }
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+
+.atrium-info {
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+.message-board {
+  border: 4px solid #D5C8B0;
+  padding: 25px;
+
+  font-size: 28px;
+  line-height: 1.5;
+
+  text-align: center;
+
+  background-color: #F2EEE5;
+
+  box-shadow:
+    inset 0 0 10px rgba(0,0,0,.08);
+}
