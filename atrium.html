@@ -232,20 +232,21 @@ setInterval(function(){
 
   board.style.opacity = 0;
 
+setTimeout(function(){
+
+  currentAnnouncement++;
+
+  if(currentAnnouncement >= announcements.length){
+    currentAnnouncement = 0;
+  }
+
+  board.innerHTML = announcements[currentAnnouncement];
 
   setTimeout(function(){
-
-    currentAnnouncement++;
-
-    if(currentAnnouncement >= announcements.length){
-      currentAnnouncement = 0;
-    }
-
-    board.innerHTML = announcements[currentAnnouncement];
-
     board.style.opacity = 1;
+  },100);
 
-  },1000);
+},1000);
 
 
 },8000);
