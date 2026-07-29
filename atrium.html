@@ -100,35 +100,39 @@
 
     <br><br>
 
-    <div class="announcement-alert">
-  SPECIAL ANNOUNCEMENT
+    <div id="announcement-text">
+
+  <div class="announcement-alert">
+    SPECIAL ANNOUNCEMENT
+  </div>
+
+  <br>
+
+  DON'T FORGET!
+
+  <br><br>
+
+  SATURDAY IS FAMILY FUN DAY!
+
+  <br><br>
+
+  • FREE BALLOONS
+
+  <br>
+  • LIVE MUSIC IN CENTER COURT
+
+  <br>
+  • SPECIAL GUEST APPEARANCE
+
+  <br><br>
+
+  BRING THE WHOLE FAMILY!
+
+  <br><br>
+
+  THIS WEEKEND ONLY
+
 </div>
-
-<br>
-
-    DON'T FORGET!
-
-    <br><br>
-
-    SATURDAY IS FAMILY FUN DAY!
-
-    <br><br>
-
-    • FREE BALLOONS
-
-    <br>
-    • LIVE MUSIC IN CENTER COURT
-
-    <br>
-    • SPECIAL GUEST APPEARANCE
-
-    <br><br>
-
-    BRING THE WHOLE FAMILY!
-
-    <br><br>
-
-    THIS WEEKEND ONLY
 
   </div>
 
@@ -144,7 +148,115 @@
 
 
 </div>
+  <script>
 
+const announcements = [
+
+`
+<div class="announcement-alert">
+SPECIAL ANNOUNCEMENT
+</div>
+
+<br>
+
+DON'T FORGET!
+
+<br><br>
+
+SATURDAY IS FAMILY FUN DAY!
+
+<br><br>
+
+• FREE BALLOONS
+
+<br>
+• LIVE MUSIC IN CENTER COURT
+
+<br>
+• SPECIAL GUEST APPEARANCE
+
+<br><br>
+
+BRING THE WHOLE FAMILY!
+
+<br><br>
+
+THIS WEEKEND ONLY
+`,
+
+`
+
+<div class="announcement-alert">
+SPECIAL ANNOUNCEMENT
+</div>
+
+<br>
+
+PLEASE DO NOT FEED THE BIRDS
+
+<br>
+
+INSIDE THE ATRIUM AREA.
+
+<br><br>
+
+WHILE WE ENJOY OUR FEATHERED
+
+<br>
+
+FRIENDS, THEY ARE NOT PERMITTED
+
+<br>
+
+INSIDE THE SHOPPING CENTER.
+
+<br><br>
+
+THANK YOU FOR YOUR COOPERATION.
+
+<br><br>
+
+MALL MANAGEMENT
+
+`
+
+];
+
+
+let currentAnnouncement = 0;
+
+
+setInterval(function(){
+
+  const board = document.getElementById("announcement-text");
+
+  board.style.opacity = 0;
+
+
+  setTimeout(function(){
+
+    currentAnnouncement++;
+
+    if(currentAnnouncement >= announcements.length){
+      currentAnnouncement = 0;
+    }
+
+    board.innerHTML = announcements[currentAnnouncement];
+
+    board.style.opacity = 1;
+
+  },1000);
+
+
+},8000);
+
+
+</script>
+  
 </body>
 
 </html>
+
+#announcement-text {
+  transition: opacity 1s ease;
+}
